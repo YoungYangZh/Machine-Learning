@@ -272,6 +272,8 @@ Lasso回归（Least Absolute Shrinkage and Selection Operator Regression）是�
 
 lasso尝试尽量减少参数betta到0.
 
+阿尔法决定我们的惩罚力度
+
 ### 弹性网 Elastic Net
 
 岭回归和Lasso回归的结合
@@ -281,9 +283,11 @@ lasso尝试尽量减少参数betta到0.
 
 ## 逻辑回归
 
-
+逻辑回归其实应该被称为逻辑分类，因为我们处理的是分类的问题，而不是回归的问题。
 
 ### 估计可能性
+
+逻辑回归是一个二项式分类，可以给一个观察对象估计概率。概率在0和1之间。如果概率大于0.5， 则是ja；如果概率小于0.5，则是nej。
 
 ### 训练和成本功能
 
