@@ -461,10 +461,18 @@ max_leaf_nodes
 
 ![image](https://user-images.githubusercontent.com/121781739/227177293-f0db4a83-f85c-48e7-805d-4560ad58f4bb.png)
 
-模型降低代价函数MSE（在分类情况下
+模型降低代价函数MSE（在分类情况下包括比如基尼因子）
+
+正则化的使用是为了
 
 
 ## 不稳定
+
+决策树一个潜在的问题是不稳定。决策树分数据垂直的因为它总是回答对或错在每一步。那么模型对数据的旋转很敏感。见下图。
+
+![image](https://user-images.githubusercontent.com/121781739/227179953-e0ece581-9f87-4001-a84f-39b8d6b7f301.png)
+
+因为决策树有过拟合的风险，所以它对数据非常敏感。在现实中，我们需要使用gridsearch来找到好的正则化参数。
 
 
 
